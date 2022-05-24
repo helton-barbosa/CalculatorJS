@@ -1,0 +1,19 @@
+body{
+   background: rgb(14, 64, 131);
+   color: aliceblue;
+   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+h1{
+   text-align: center;
+}
+input#somar01, input#somar02,
+input#subtrair01, input#subtrair02,
+input#multiplicar01, input#multiplicar02,
+input#dividir01, input#dividir02,
+input#resto01, input#resto02,
+input#potenciacao01, input#potenciacao02{
+   width: 100px;
+}
+input#somar, input#subtrair, input#multiplicar, input#dividir, input#resto, input#potenciacao{
+   width: 100px;
+}

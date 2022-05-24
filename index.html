@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Calculadora Simples</title>
+   <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+   <main>
+      <h1>Calculadora Simples com JS</h1>
+      <h3>Adição</h3>
+         <input type="number" name="somar01" id="somar01"> +
+         <input type="number" name="somar02" id="somar02">
+         <input type="button" value="Somar" id="somar" onclick="somar()">
+      <h3>Subtração</h3>
+         <input type="number" name="subtrair01" id="subtrair01"> -
+         <input type="number" name="subtrair02" id="subtrair02">
+         <input type="button" value="Subtrair" id="subtrair" onclick="subtrair()">
+      <h3>Multiplicação</h3>
+         <input type="number" name="multiplicar01" id="multiplicar01"> *
+         <input type="number" name="multiplicar02" id="multiplicar02">
+         <input type="button" value="Multiplicar" id="multiplicar" onclick="multiplicar()">
+      <h3>Divisão</h2>
+         <input type="number" name="dividir01" id="dividir01"> /
+         <input type="number" name="dividir02" id="dividir02">
+         <input type="button" value="Dividir" id="dividir" onclick="dividir()">     
+      <h3>Resto da Divisão</h2>
+         <input type="number" name="resto01" id="resto01"> %
+         <input type="number" name="resto02" id="resto02">
+         <input type="button" value="Resto" id="resto" onclick="resto()">
+      <h3>Potenciação</h2>
+         <input type="number" name="potenciacao01" id="potenciacao01"> ^
+         <input type="number" name="potenciacao02" id="potenciacao02">
+         <input type="button" value="Potenciação" id="potenciacao" onclick="potenciacao()">
+   </main>
+
+   <script>
+      function somar(){
+         var somar01 = window.document.querySelector('input#somar01')
+         var somar02 = window.document.querySelector('input#somar02')
+         var so01 = Number(somar01.value)
+         var so02 = Number(somar02.value)
+         var res = (so01 + so02)
+         alert(`Resultado: ${res}`)
+      }
+
+      function subtrair(){
+         var subtrair01 = window.document.querySelector('input#subtrair01')
+         var subtrair02 = window.document.querySelector('input#subtrair02')
+         var su01 = Number(subtrair01.value)
+         var su02 = Number(subtrair02.value)
+         var res = (su01 - su02)
+         alert(`Resultado: ${res}`)
+      }
+
+      function multiplicar(){
+         var multiplicar01 = window.document.querySelector('input#multiplicar01')
+         var multiplicar02 = window.document.querySelector('input#multiplicar02')
+         var mu01 = Number(multiplicar01.value)
+         var mu02 = Number(multiplicar02.value)
+         var res = (mu01 * mu02)
+         alert(`Resultado: ${res}`)
+      }
+
+      function dividir(){
+         var dividir01 = window.document.querySelector('input#dividir01')
+         var dividir02 = window.document.querySelector('input#dividir02')
+         var di01 = Number(dividir01.value)
+         var di02 = Number(dividir02.value)
+         var res = (di01 / di02)
+         alert(`Resultado: ${res}`)
+      }
+
+      function resto(){
+         var resto01 = window.document.querySelector('input#resto01')
+         var resto02 = window.document.querySelector('input#resto02')
+         var re01 = Number(resto01.value)
+         var re02 = Number(resto02.value)
+         var res = (re01 % re02)
+         alert(`Resultado: ${res}`)
+      }
+
+      function potenciacao(){
+         var potenciacao01 = window.document.querySelector('input#potenciacao01')
+         var potenciacao02 = window.document.querySelector('input#potenciacao02')
+         var po01 = Number(potenciacao01.value)
+         var po02 = Number(potenciacao02.value)
+         var res = (po01 ** po02)
+         alert(`Resultado: ${res}`)
+      }
+   </script>
+</body>
+</html>
