@@ -1,5 +1,5 @@
 body{
-   background: rgb(14, 64, 131);
+   background: rgb(8, 80, 173);
    color: aliceblue;
    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
@@ -12,8 +12,13 @@ input#multiplicar01, input#multiplicar02,
 input#dividir01, input#dividir02,
 input#resto01, input#resto02,
 input#potenciacao01, input#potenciacao02{
-   width: 100px;
+   width: 60px;
+   background: burlywood;
 }
 input#somar, input#subtrair, input#multiplicar, input#dividir, input#resto, input#potenciacao{
    width: 100px;
+   font-weight: bold;
+}
+strong{
+   font-size: 1.2em;
 }
